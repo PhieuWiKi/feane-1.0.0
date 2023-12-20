@@ -1,0 +1,68 @@
+.cart_link{
+    position: relative;
+}
+.numMenu{
+    position: absolute;
+    border: 1px solid red;
+    background: red;
+    height: 12px;
+    width: 12px;
+    top: -4px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    line-height: 11px;
+    right: -5px;
+    border-radius: 50%;
+}
+.cart_link:hover > .list_menu{
+    display: block;
+}
+.list_menu{
+    
+    display: none;
+    z-index: 5;
+    border: 1px solid #fff;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #6b6b6b;
+}
+.list_menu .item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7px;
+    background: rgb(232, 232, 232);
+}
+.list_menu .item:hover {
+    background: rgb(162, 162, 162);
+}
+.item img {
+    width: 50px;
+}
+.item .name {
+    width: 150px;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.item .count {
+    padding: 0 5px;
+}
+.item .price {
+    padding: 0 5px;
+}
+.item button {
+    border: none;
+    outline: none;
+    background: none;
+}
+.item button:hover {
+    color: red;
+}
